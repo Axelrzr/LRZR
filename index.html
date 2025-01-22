@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio photo et vidéo de LRZR. Découvrez mes prestations et réalisations.">
+    <meta name="keywords" content="photographie, vidéographie, LRZR, prestations, portfolio">
+    <title>LRZR Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head> 
+
+<body>
+    <header>
+        <img class="logo" src="img/Capture d'écran 2025-01-12 083916.png" alt="logo LRZR">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Bienvenue chez LRZR</h1>
+        <p>Plongez dans mon univers audiovisuel. Découvrez mon portfolio et mes prestations.</p>
+        <button onclick="scrollToSection('portfolio')">Voir mes réalisations</button>
+    </section>
+
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="gallery">
+            <img src="img/photo1.jpg" alt="Photo 1">
+            <img src="img/photo2.jpg" alt="Photo 2">
+            <img src="img/photo3.jpg" alt="Photo 3">
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="img/portfolio1.jpg" alt="Projet 1" class="lightbox">
+            <img src="img/portfolio2.jpg" alt="Projet 2" class="lightbox">
+            <img src="img/portfolio3.jpg" alt="Projet 3" class="lightbox">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/ton-identifiant" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LRZR. Tous droits réservés.</p>
+        <a href="#home" class="back-to-top">Retour en haut</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
